@@ -25,7 +25,7 @@ build-fixed19:
 	mpic++ fixed19.cpp -o /share/fixed19
 
 build-buggy23:
-	mpicc buggy23.c -o /share/buggy23
+	mpicc -lm buggy23.c -o /share/buggy23
 
 build-fixed23:
-	mpicc fixed23.c -o /share/fixed23
+	mpicc -lm fixed23.c -o /share/fixed23
