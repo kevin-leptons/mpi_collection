@@ -19,10 +19,10 @@ build-fixed17:
 	mpicc fixed17.c -o /share/fixed17
 
 build-buggy19:
-	mpicc buggy19.c -o /share/buggy19
+	mpicc -std=gnu99 buggy19.c -o /share/buggy19
 
 build-fixed19:
-	mpicc fixed19.c -o /share/fixed19
+	mpicc -std=gnu99 fixed19.c -o /share/fixed19
 
 build-buggy23:
 	mpicc buggy23.c -o /share/buggy23
