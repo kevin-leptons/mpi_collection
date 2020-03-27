@@ -3,20 +3,29 @@ all: build-default \
 	build-buggy19 build-fixed19 \
 	build-buggy23 build-fixed23
 
-build-default: mpicc default.c -o /share/default
+build-default:
+	mpicc default.c -o /share/default
 
-run-default: mpirun /share/default
+run-default: 
+	mpirun /share/default
 
-build-buggy17: mpicc buggy17.c -o /share/buggy17
+build-buggy17: 
+	mpicc buggy17.c -o /share/buggy17
 
-run-buggy17: mpirun /share/buggy17
+run-buggy17:
+	mpirun /share/buggy17
 
-build-fixed17: mpicc fixed17.c -o /share/fixed17
+build-fixed17:
+	mpicc fixed17.c -o /share/fixed17
 
-build-buggy19: mpicc buggy19.c -o /share/buggy19
+build-buggy19:
+	mpicc buggy19.c -o /share/buggy19
 
-build-fixed19: mpicc fixed19.c -o /share/fixed19
+build-fixed19:
+	mpicc fixed19.c -o /share/fixed19
 
-build-buggy23: mpicc buggy23.c -o /share/buggy23
+build-buggy23:
+	mpicc buggy23.c -o /share/buggy23
 
-build-fixed23: mpicc fixed23.c -o /share/fixed23
+build-fixed23:
+	mpicc fixed23.c -o /share/fixed23
