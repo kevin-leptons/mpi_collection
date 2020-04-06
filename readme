@@ -1,0 +1,17 @@
+# kevin.leptons-gmail.com
+
+
+# Usage
+
+```
+make                    # build all programs
+make build-default      # build default program
+make build-buggy17      # and so on
+make build-fixed17
+make build-buggy19
+make build-fixed19
+make build-buggy23
+make build-fixed23
+
+make run-buggy17        # run buggy17
+```
